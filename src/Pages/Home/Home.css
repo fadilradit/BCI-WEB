@@ -1,0 +1,773 @@
+#home-container{
+    /* margin-top: 80px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
+.main-slider{
+    /* margin-top: 53px; */
+    /* background-color: darkslateblue; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto ;
+}
+
+/* .banner-container{
+    background-color: green;
+    margin: 30px;
+    width: 60%;
+    height: 400px;
+    border-radius: 10px;
+} */
+
+.slider-image{
+    width: 100%;
+    height:85vh;
+    border-radius: 5px;
+}
+
+/* Responsive Breakpoint */
+
+/* Tablet */
+
+@media  screen and (max-width:900px) {
+    .main-slider{
+        width: 100%;
+    }
+
+   .slider-image{
+       width: 100%;
+       height: 90vh;
+   }
+    
+}
+
+/* Mobile */
+
+@media  screen and (max-width:580px) {
+
+    .main-slider{
+        width: 100% ;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .slider-image{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
+
+
+/* sesi video */
+.video-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #b8c8e6; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.video-group video{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px black;
+    width: 40%;
+}
+
+
+/* Sesi Poster */
+.poster{
+    /* background-color: #DF1F28; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.poster .poster-item{
+    width: 30%;
+    margin: 25px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 4px black;
+    
+}
+
+.poster-item img{
+    width: 100%;
+}
+
+
+/* Sesi Unit */
+#home-container .unit{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-evenly;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    /* background-color: aquamarine; */
+
+}
+
+.unit-title{
+    font-size: 30px;
+    margin-top: 200px;
+    margin-bottom: 15px;
+}
+
+.unit .card-unit{
+    width: 250px;
+    box-shadow: 0px 0px 8px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 10px;
+    /* padding: 0px 10px 10px 10px; */
+    background-color: #C7D8DB;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.card-unit .unit-image{
+    width: 100%;
+    border: 0.5px solid black;
+    height: 350px;
+}
+
+.card-unit .unit-info1{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    /* align-self: flex-start; */
+    margin-bottom: 15px;
+}
+
+.card-unit .unit-info2{
+    align-self: flex-start;
+    font-size: 15px;
+    font-weight: 700;
+    color: #DF1F28;
+}
+
+
+
+/* Sesi Promo */
+.promo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.promo .promo-background {
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    filter: brightness(0.5);
+    border-radius: 20px;
+    border: rgb(119, 113, 113)   ;
+    overflow: hidden;
+}
+
+.promo-background img{
+    width: 100%;
+}
+
+.promo-group{
+    width: 80%;
+    z-index: 100;
+    /* background-color: rgb(187, 50, 50); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.promo-list{
+    background-color: #E2F1F4;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px 0px 0px 16px;
+    padding: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.67);
+}
+
+.promo-list h1{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.promo-list ul{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-self: center;
+    /* padding: 10px; */
+    margin-left: 10px;
+    width: 95%;
+
+}
+
+.promo-list ul li{
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.promo-list li img{
+    width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+}
+
+.promo-list h5{
+    align-self: flex-start;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+.promo-card{
+    /* margin-top: 10px; */
+    /* background-color: #badfcf; */
+    /* width: 30% ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 8px 4px; */
+    z-index: 100;
+    /* position: relative; */
+    /* align-self: center;
+    justify-self: center;
+    margin-top: 100px; */
+    width: 40%;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.31);
+border-radius: 0px 16px 16px 0;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.7px);
+-webkit-backdrop-filter: blur(2.7px);
+border: 1px solid rgba(255, 255, 255, 0.67);
+}
+
+.promo-card h1{
+    color: antiquewhite;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+.promo-card .form-promo{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #DF1F28; */
+    align-items: center;
+}
+
+
+.form-promo input{
+    margin-bottom: 5px;
+    width: 70%;
+    border-radius: 6px;
+    border: none;
+    height:25px;
+}
+
+.form-promo select{
+    margin-bottom: 5px;
+    width: 70%;
+    border-radius: 6px;
+    border: none;
+    height:25px;
+}
+
+.form-promo input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-promo input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.promo-card button{
+    border-radius: 6px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 75, 172);
+}
+
+.promo-card button:hover{
+    cursor: pointer;
+    -moz-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    transition-duration: 0.5s;
+    
+}
+
+
+/* Sesi Fasilitas Perumahan */
+.back-drop{
+    width: 100%;
+    /* background-image: url('../../Asset//Fasilitas\ Perumahan\ BG.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.fasilitas-perumahan{
+    /* background-color: #DF1F28; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: #b3b3b3 1px solid;
+    padding: 20px 0;
+    background-color: #cfeee86c;
+  -webkit-backdrop-filter: blur(1.5px) grayscale(1);
+  backdrop-filter: blur(1.5px) grayscale(1) ;
+}
+
+.fasilitas-perumahan h1{
+    align-self: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(44, 41, 41);
+    /* text-shadow: 4px 4px 2px #ffffff; */
+}
+
+.fasilitas-perumahan .fp-list{
+    /* background-color: aqua; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.fp-list .fp-item{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 15px 30px;
+}
+
+.fp-item img{
+    width: 100%;
+    filter: brightness(0.8);
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.fp-item h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    /* text-shadow: 4px 4px 2px #ffffff; */
+    color: rgb(29, 27, 27);
+}
+
+
+/* Sesi Fasilitas Perkotaan */
+.fasilitas-umum{
+    /* background-color: #DF1F28; */
+    width: 100%;
+    background-image: url('../../Asset/Fasilitas\ Umum\ BG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fasilitas-umum .fu-backdrop{
+    /* background-color: rgba(63, 63, 87, 0.829); */
+    background-color: #6792899a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    -webkit-backdrop-filter: blur(2px) ;
+  backdrop-filter: blur(2px) ;
+}
+
+.fu-backdrop h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+.fu-backdrop .fu-list{
+    /* background-color: aqua; */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fu-list .fu-item{
+    /* background-color: #C7D8DB; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    /* border: black 2px solid; */
+    /* margin: 0 10px; */
+}
+
+.fu-item img{
+    width: 25%;
+}
+
+.fu-item .akses-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color:#DF1F28; */
+    justify-content: center;
+    align-items: center;
+}
+
+.akses-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px ;
+    margin-bottom: 5px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black ;
+    line-height: 20px;
+    word-break: break-all;
+}
+
+.akses-list img{
+    width: 20px;
+}
+
+/* Sesi Video */
+
+.video{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: #DF1F28; */
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video .video-item{
+    margin: 20px 20px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 0 10px 3px black ;
+    width: 400px;
+    height: 200px;
+    min-width: 300px;
+    min-height: 100px;
+}
+
+.video-item iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Sesi Kontak */
+.contact{
+    width: 300px;
+    /* background-color: #DF1F28; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.452);
+    /* border: 1px solid rgba(245, 242, 242, 0.904); */
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+
+
+
+.contact h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact .contact-list{
+    width: 100%;
+    /* background-color: aqua; */
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-list .contact-item{
+    display: flex;
+    /* background-color: blueviolet; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-item img{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.contact-item a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    /* margin-bottom: 10px; */
+}
+
+/* Sesi Lokasi */
+.lokasi{
+    width: 100%;
+    /* background-color: #DF1F28; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.lokasi .lokasi-group{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    justify-content: center;
+    border: black 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    /* align-items: center; */
+    /* background-color: aqua; */
+}
+
+.lokasi-group .lokasi-image{
+    width: 100%;
+
+}
+
+.lokasi-image img{
+    width: 100%;
+}
+
+.lokasi-group .lokasi-detail{
+    width: 100%;
+    background-color: #071e22;
+    padding: 0 20px;
+}
+
+.lokasi-detail .lokasi-desc{
+    
+    width: 95%;
+}
+
+.lokasi-detail h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black;
+    font-weight:700;
+}
+
+.lokasi-detail h2{
+    font-size: 20px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 10px;
+}
+
+.lokasi-detail h3{
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.lokasi-detail img{
+    width: 100px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #071e22;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h2{
+    color: antiquewhite;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+/* Tablet */
+@media  screen and (max-width:1170px){
+
+    /* .unit{
+        flex-wrap: wrap;
+    } */
+
+    .video-group video{
+        border-radius: 10px;
+        box-shadow: 0 0 10px 4px black;
+        width: 80%;
+    }
+
+    .promo-group{
+        width: 100%;
+    }
+
+    .poster .poster-item{
+        width: 60%;
+    }
+
+    .lokasi .lokasi-group{
+        flex-direction: column-reverse;
+    }
+
+    .lokasi-group .lokasi-image{
+        width: 100%;
+    }
+
+    .lokasi-group .lokasi-detail{
+        width: 100%;
+    }
+
+    
+
+}
+
+
+
+/* Mobile */
+@media  screen and (max-width:580px) {
+
+    .poster .poster-item{
+        width: 75% ;
+    }
+
+    .promo .promo-background{
+        width: 100%;
+        height: auto;
+    }
+
+    .promo-group{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .promo-list{
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px ;
+    }
+
+    .promo-card{
+        width: 90%;
+        border-radius: 16px;
+    }
+
+    .promo-card .form-promo{
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    
+    .form-promo input{
+        margin-bottom: 10px;
+    }
+
+    #home-container .unit{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unit .card-unit{
+        margin-bottom: 20px;
+    }
+
+    .unit-title{
+        margin-top: 50px;
+    }
+
+
+    .fu-backdrop .fu-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fu-list .fu-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lokasi .lokasi-group{
+        width: 90%;
+        
+        /* align-items: center; */
+        /* background-color: aqua; */
+    }
+    
+
+}
